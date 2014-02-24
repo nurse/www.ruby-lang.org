@@ -11,7 +11,7 @@ gleichzeitig funktional und praktisch. Wie kommt das?
 ### Die Ideale des Ruby-Erfinders
 
 Ruby ist eine Sprache der Balance. Ihr Schöpfer [Yukihiro “Matz”
-Matsumoto][1] kombinierte Teile seiner Lieblingssprachen (Perl,
+Matsumoto][matz] kombinierte Teile seiner Lieblingssprachen (Perl,
 Smalltalk, Eiffel, Ada und Lisp) und formte daraus eine neue
 Programmiersprache, in der funktionale und imperative Programmierung
 ausbalanciert sind.
@@ -39,17 +39,18 @@ Gmane.](http://gmane.org/plot-rate.php?group=gmane.comp.lang.ruby.general&amp;wi
 "Graph courtesy of Gmane."){: style="padding-left:8px;"}
 {: style="float:right"}
 
-Ruby-Talk, die wichtigste [Mailingliste](/en/community/mailing-lists/)
+Ruby-Talk, die wichtigste [Mailingliste](/de/community/mailing-lists/)
 für Diskussionen rund um Ruby, erreichte 2006 einen Spitzenwert von etwa
 200 Nachrichten pro Tag. Seither ist die Aktivität wieder zurückgegangen,
 da mit dem starken Anwachsen der Community zahlreiche kleinere Listen
 entstanden sind.
 
-Der [TIOBE-Index][2], der die Verbreitung von Programmiersprachen misst,
-listet Ruby auf Platz 10 der populärsten Sprachen. Ein großer Teil
-dieses Wachstums ist der Beliebtheit von in Ruby geschriebener Software
-zu verdanken, insbesondere dem Web-Framework Ruby on
-Rails<sup>[2](#fn2)</sup>.
+Die meisten Indizes, die das Wachstum und die Beliebtheit von
+Programmiersprachen weltweit messen, listen Ruby unter den beliebtesten
+zehn Sprachen (wie zum Beispiel der [TIOBE-Index][tiobe]).
+Ein großer Teil dieses Wachstums ist der Beliebtheit von in Ruby
+geschriebener Software zu verdanken, insbesondere dem Web-Framework
+[Ruby on Rails][ror].
 
 Ruby ist außerdem [absolut frei]({{ site.license.url }}). Nicht nur kostenlos,
 sondern auch frei zu benutzen, zu kopieren, zu verändern und zu
@@ -60,7 +61,7 @@ vertreiben.
 Am Anfang hat Matz andere Sprachen studiert, um die ideale Syntax zu
 finden. An diese Suche erinnert sagt er: “Ich wollte eine Skriptsprache,
 die mächtiger als Perl und objektorientierter als Python
-ist<sup>[3](#fn3)</sup>.”
+ist<sup>[2](#fn2)</sup>.”
 
 In Ruby ist alles ein Objekt. Jedes Stück Information kann eigene
 Eigenschaften und Aktionen besitzen. In der Welt der objektorientierten
@@ -114,7 +115,7 @@ Basic gearbeitet haben.
 
 Blöcke sind durch funktionale Programmiersprachen inspiriert. Matz sagt:
 “Mit Ruby-Closures wollte ich die Kultur von LISP
-bewahren<sup>[4](#fn4)</sup>.”
+bewahren<sup>[3](#fn3)</sup>.”
 
 {% highlight ruby %}
 search_engines =
@@ -192,28 +193,72 @@ Ruby hat eine Fülle weiterer Features, unter ihnen folgende:
   entwickelt, arbeitet aber auf vielen UNIX-Varianten wie Mac OS X, auf
   Windows 95/98/Me/NT/2000/XP, DOS, BeOS, OS/2, usw.
 
+### Alternative Ruby-Implementierungen
+
+Ruby als Sprache hat einige verschiedene Implementierungen.
+Diese Seite diskutiert die Referenzimplementierung, in der
+Community auch bekannt als **MRI** („Matz’ Ruby-Interpreter“) oder
+**CRuby** (da sie in C geschrieben ist), es gibt aber noch einige weitere.
+Oftmals sind diese in bestimmten Situationen nützlich, stellen spezielle
+Sprach- oder Umgebungsintergration zur Verfügung oder haben einfach
+spezielle Features, die MRI nicht hat.
+
+Hier ist eine Liste:
+
+* [JRuby][jruby] ist ein Ruby auf der JVM (Java Virtual Machine), das von
+  den optimierenden JIT-Compilern der JVM, ihrem Garbage Collector,
+  nebenläufigen Threads, diversen Tools und einer immensen Menge an
+  Programmbibliotheken profitiert.
+* [Rubinius][rubinius] ist ein „Ruby geschrieben in Ruby“. Aufgebaut auf der
+  LLVM stellt Rubinius eine gute virtuelle Maschine zur Verfügung, auf
+  der sogar andere Sprachen aufbauen. Ebenso wie JRuby besitzt es echt
+  nebenläufige Threads, ist jedoch im Gegensatz zu diesem kompatibel zur
+  C-API des MRI.
+* [MacRuby][macruby] ist stark integriert in Apples Cocoa-Framework für Mac
+  OS X, was ein leichtes Erstellen von Desktopanwendungen für Mac OS X
+  ermöglicht.
+* [mruby][mruby] ist eine schlanke Ruby-Implementierung, die
+  gelinkt und in Anwendungen eingebunden werden kann.
+  Die Entwicklung von mruby wird von Yukihiro “Matz” Matsumoto geleitet,
+  dem Schöpfer von Ruby.
+* [IronRuby][ironruby] integriert sich gut in die .NET-Plattform.
+* [MagLev][maglev] definiert sich selbst als „eine schnelle, stabile
+  Ruby-Implementierung mit integrierter Objektpersistenz und verteiltem
+  Shared Cache“.
+* [Cardinal][cardinal] ist ein „Ruby-Compiler für die
+  [Parrot][parrot] Virtual Machine“ (Perl 6).
+
+Einige der genannten Implementierungen, MRI eingeschlossen, folgen den
+Richtlinien von [RubySpec][rubyspec], einer „kompletten ausführbaren
+Spezifikation für die Programmiersprache Ruby“.
+
 ### Referenzen
 
-<sup>1</sup> Matz in der Ruby-Talk-Mailingliste am [12. Mai 2000][3].
+<sup>1</sup> Matz in der Ruby-Talk-Mailingliste am [12. Mai 2000][blade].
 {: #fn1}
 
-<sup>2</sup> Besuche die Website von [Ruby on Rails][4], um mehr zu
-erfahren.
+<sup>2</sup> Matz in [An Interview with the Creator of Ruby][linuxdevcenter], 29.
+November 2001.
 {: #fn2}
 
-<sup>3</sup> Matz in [An Interview with the Creator of Ruby][5], 29.
-November 2001.
+<sup>3</sup> Matz in [Blocks and Closures in Ruby][artima], 22. Dezember
+2003.
 {: #fn3}
 
-<sup>4</sup> Matz in [Blocks and Closures in Ruby][6], 22. Dezember
-2003.
-{: #fn4}
 
 
-
-[1]: http://www.rubyist.net/~matz/
-[2]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
-[3]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
-[4]: http://rubyonrails.org/
-[5]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
-[6]: http://www.artima.com/intv/closures2.html
+[matz]: http://www.rubyist.net/~matz/
+[blade]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
+[ror]: http://rubyonrails.org/
+[linuxdevcenter]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
+[artima]: http://www.artima.com/intv/closures2.html
+[tiobe]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
+[jruby]: http://jruby.org
+[rubinius]: http://rubini.us
+[macruby]: http://www.macruby.org
+[mruby]: https://github.com/mruby/mruby
+[ironruby]: http://www.ironruby.net
+[maglev]: http://ruby.gemstone.com
+[cardinal]: https://github.com/parrot/cardinal
+[parrot]: http://parrot.org
+[rubyspec]: http://rubyspec.org

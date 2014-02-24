@@ -1,7 +1,19 @@
 require 'rack/jekyll'
 require 'rack/rewrite'
+require 'rack/protection'
+
+use Rack::CommonLogger
 
 use Rack::Rewrite do
+  if ENV["RACK_ENV"] == "production"
+    r301 %r{.*}, "https://www.ruby-lang.org$&", scheme: "http", host: "www.ruby-lang.org"
+    r301 %r{.*}, "https://staging.ruby-lang.org$&", scheme: "http", host: "staging.ruby-lang.org"
+  end
+
+  r302 %r{.*}, "$&/", if: ->(rack_env) {
+    rack_env["PATH_INFO"].match(%r{/$}).nil? && File.exist?("_site#{rack_env["PATH_INFO"]}/index.html")
+  }
+
   r302 %r{^/bugreport\.html$}, "http://bugs.ruby-lang.org/"
 
   r302 %r{^/ja/20030611\.html$}, "/ja/downloads"
@@ -63,5 +75,8 @@ use Rack::Rewrite do
   r302 %r{^/pt/bibliotecas/top-de-projectos-ruby(.*)$}, "/pt/libraries/top-projects$1"
   r302 %r{^/pt/bibliotecas(.*)$}, "/pt/libraries$1"
 end
+
+use Rack::Protection::HttpOrigin
+use Rack::Protection::FrameOptions
 
 run Rack::Jekyll.new

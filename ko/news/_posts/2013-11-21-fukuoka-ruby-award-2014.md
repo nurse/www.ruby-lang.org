@@ -4,7 +4,7 @@ title: "2014 Fukuoka Ruby Award Competition -Entries to be judged by Matz"
 title: "2014 후쿠오카 루비 어워드 경진대회 -참가작은 Matz가 심사"
 author: "Fukuoka Ruby"
 translator: "SeungKyun Nam"
-date: 2013-11-21 08:17:06 UTC
+date: 2013-11-21 08:17:06 +0000
 lang: ko
 ---
 
@@ -36,7 +36,7 @@ lang: ko
 참가 양식을 [award@f-ruby.com][5]로 보내 주십시오.
 
 올해는 아래와 같은 특별한 상을 준비했습니다:
-엔진 분야 상(Engine Yard Prize) 수상자는 다음과 같은 것을 받게 됩니다:
+엔진 야드 상(Engine Yard Prize) 수상자는 다음과 같은 것을 받게 됩니다:
 
 * Engine Yard Cloud 5,000시간 분량의 크레딧
 * 두 장의 루비카이기(RubyKaigi) 티켓 (1인당 50,000엔의 교통운임 포함)
@@ -55,7 +55,7 @@ lang: ko
 
 "Matz가 당신의 소스 코드를 속속들이 테스트하고 리뷰할 것입니다. 그러므로 참여하는 것은 매우 의미있는 일입니다! 경진대회 참여는 무료입니다."
 
-힘내십시오,
+힘내십시오!
 
 [1]: http://www.myfukuoka.com/category/ruby-award-winners
 [2]: http://www.digitalfukuoka.jp/events/22?locale=ja

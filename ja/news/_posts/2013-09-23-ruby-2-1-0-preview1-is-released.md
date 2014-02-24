@@ -3,7 +3,7 @@ layout: news_post
 title: "Ruby 2.1.0-preview1 リリース"
 author: "nurse"
 translator: "znz"
-date: 2013-09-23 07:00:00 UTC
+date: 2013-09-23 07:00:00 +0000
 lang: ja
 ---
 
@@ -42,8 +42,8 @@ Fastly による
 * RGenGC (ささださんの [RubyKaigi での発表](http://rubykaigi.org/2013/talk/S73) や [EuRuKo での発表](http://www.atdot.net/~ko1/activities/Euruko2013-ko1.pdf) を参照してください)
 * refinements
 * syntax
-* 小数リテラル
-* freeze された文字列リテラル
+  * 有理数リテラル
+  * freeze された文字列リテラル
 * def の返り値
 * Bignum
 * 128ビット
@@ -52,7 +52,7 @@ Fastly による
 * Socket.getifaddrs
 * 新しい RubyGems
 
-詳細な変更点は [Ruby レポジトリの NEWS (作業中)](https://github.com/ruby/ruby/blob/trunk/NEWS) を参照してください。
+詳細な変更点は [Ruby リポジトリの NEWS (作業中)](https://github.com/ruby/ruby/blob/trunk/NEWS) を参照してください。
 
 ささださんが toruby で発表しました: [Summary of Ruby 2.1](http://www.atdot.net/~ko1/activities/toruby05-ko1.pdf)
 

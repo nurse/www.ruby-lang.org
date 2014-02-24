@@ -12,7 +12,7 @@ conveniente. Afinal qual é o resultado?
 ### Os Ideais do Criador do Ruby
 
 O Ruby é uma linguagem com um equilíbrio cuidado. O seu criador,
-[Yukihiro “Matz” Matsumoto][1], uniu partes das suas linguagens
+[Yukihiro “Matz” Matsumoto][matz], uniu partes das suas linguagens
 favoritas (Perl, Smalltalk, Eiffel, Ada, e Lisp) para formar uma nova
 linguagem que equilibra a programação funcional com a programação
 imperativa.
@@ -41,12 +41,12 @@ A Ruby-Talk, a principal [lista de
 correio](/pt/community/mailing-lists/) para a discussão sobre a
 linguagem Ruby subiu para uma média de 200 mensagens diárias.
 
-O [índice TIOBE][6], que mede o crescimento das linguagens de programação,
+O [índice TIOBE][tiobe], que mede o crescimento das linguagens de programação,
 posiciona o Ruby em #12 entre as linguagens de programação. Citando o
 seu crescimento, prevêm que “Existem possibilidades de que o Ruby entre
 no Top 10 dentro de meio ano.” Muito deste crescimento é atribuído à
 popularidade do software escrito em Ruby, em particular a framework de
-desenvolvimento web Ruby on Rails<sup>[2](#fn2)</sup>.
+desenvolvimento web [Ruby on Rails][ror].
 
 O Ruby é também [totalmente livre]({{ site.license.url }}). Não somente livre de
 custos, mas também livre para utilizar, copiar, modificar e distribuir.
@@ -56,7 +56,7 @@ custos, mas também livre para utilizar, copiar, modificar e distribuir.
 Inicialmente, Matz estudou outras linguagens em busca de encontrar uma
 sintaxe ideal. Recordando a sua busca, disse, “Eu queria uma linguagem
 interpretada que fosse mais poderosa que o Perl e mais orientada aos
-objectos do que o Python<sup>[3](#fn3)</sup>.”
+objectos do que o Python<sup>[2](#fn2)</sup>.”
 
 Em Ruby, tudo é um objecto. Cada parcela de informação e código podem
 receber as suas próprias propriedades e acções. A Programação orientada
@@ -110,7 +110,7 @@ de outras linguagens imperativas como o PHP ou o Visual Basic.
 
 Os Blocos são inspirados nas linguagens funcionais. O Matz disse, “nos
 fechos em Ruby, Eu quis respeitar a cultura do
-Lisp<sup>[4](#fn4)</sup>”.
+Lisp<sup>[3](#fn3)</sup>”.
 
 {% highlight ruby %}
 search_engines =
@@ -197,25 +197,22 @@ seguintes:
 ### Referências
 
 <sup>1</sup> Matz, falando na lista de correio Ruby-Talk, [12 Mai.
-2000][2].
+2000][blade].
 {: #fn1}
 
-<sup>2</sup> Vêr página [Ruby on Rails][3] para mais informações.
+<sup>2</sup> Matz, em [An Interview with the Creator of Ruby][linuxdevcenter], 29
+Nov. 2001.
 {: #fn2}
 
-<sup>3</sup> Matz, em [An Interview with the Creator of Ruby][4], 29
-Nov. 2001.
+<sup>3</sup> Matz, em [Blocks and Closures in Ruby][artima], 22 December
+2003.
 {: #fn3}
 
-<sup>4</sup> Matz, em [Blocks and Closures in Ruby][5], 22 December
-2003.
-{: #fn4}
 
 
-
-[1]: http://www.rubyist.net/~matz/
-[2]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
-[3]: http://rubyonrails.org/
-[4]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
-[5]: http://www.artima.com/intv/closures2.html
-[6]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
+[matz]: http://www.rubyist.net/~matz/
+[blade]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
+[ror]: http://rubyonrails.org/
+[linuxdevcenter]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
+[artima]: http://www.artima.com/intv/closures2.html
+[tiobe]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html

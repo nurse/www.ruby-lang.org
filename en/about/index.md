@@ -11,7 +11,7 @@ language. And yet, they say it’s handy and practical. What gives?
 ### The Ideals of Ruby’s Creator
 
 Ruby is a language of careful balance. Its creator, [Yukihiro “Matz”
-Matsumoto][1], blended parts of his favorite languages (Perl, Smalltalk,
+Matsumoto][matz], blended parts of his favorite languages (Perl, Smalltalk,
 Eiffel, Ada, and Lisp) to form a new language that balanced functional
 programming with imperative programming.
 
@@ -41,10 +41,11 @@ per day in 2006. It has dropped in recent years as the size of the
 community pushed discussion from one central list into many smaller
 groups.
 
-The [TIOBE index][6], which measures the growth of programming languages,
-ranks Ruby as #9 among programming languages worldwide. Much of the
-growth is attributed to the popularity of software written in Ruby,
-particularly the Ruby on Rails web framework<sup>[2](#fn2)</sup>.
+Ruby is ranked among the top 10 on most of the indices that measure
+the growth and popularity of programming languages worldwide
+(such as the [TIOBE index][tiobe]). Much of the growth is attributed to the
+popularity of software written in Ruby, particularly the
+[Ruby on Rails][ror] web framework.
 
 Ruby is also [completely free]({{ site.license.url }}). Not only free of charge, but
 also free to use, copy, modify, and distribute.
@@ -54,7 +55,7 @@ also free to use, copy, modify, and distribute.
 Initially, Matz looked at other languages to find an ideal syntax.
 Recalling his search, he said, “I wanted a scripting language that was
 more powerful than Perl, and more object-oriented than
-Python<sup>[3](#fn3)</sup>.”
+Python<sup>[2](#fn2)</sup>.”
 
 In Ruby, everything is an object. Every bit of information and code can
 be given their own properties and actions. Object-oriented programming
@@ -105,7 +106,7 @@ the most popular features for newcomers to Ruby from other imperative
 languages like PHP or Visual Basic.
 
 Blocks are inspired by functional languages. Matz said, “in Ruby
-closures, I wanted to respect the Lisp culture<sup>[4](#fn4)</sup>.”
+closures, I wanted to respect the Lisp culture<sup>[3](#fn3)</sup>.”
 
 {% highlight ruby %}
 search_engines =
@@ -180,28 +181,69 @@ Ruby has a wealth of other features, among which are the following:
   works on many types of UNIX, Mac OS X, Windows 95/98/Me/NT/2000/XP,
   DOS, BeOS, OS/2, etc.
 
+### Other Implementations of Ruby
+
+Ruby, as a language, has a few different implementations.
+This page has been discussing the reference implementation, in the
+community often referred to as **MRI** (“Matz’s Ruby Interpreter”)
+or **CRuby** (since it is written in C), but there are also others.
+They are often useful in certain situations, provide extra
+integration to other languages or environments, or have special features
+that MRI doesn’t.
+
+Here’s a list:
+
+* [JRuby][jruby] is Ruby atop the JVM (Java Virtual Machine), utilizing the
+  JVM’s optimizing JIT compilers, garbage collectors, concurrent
+  threads, tool ecosystem, and vast collection of libraries.
+* [Rubinius][rubinius] is ‘Ruby written in Ruby’. Built on top of LLVM,
+  Rubinius sports a nifty virtual machine that other languages are being
+  built on top of, too.
+* [MacRuby][macruby] is a Ruby that’s tightly integrated with Apple’s Cocoa
+  libraries for Mac OS X, allowing you to write desktop applications
+  with ease.
+* [mruby][mruby] is a lightweight implementation of the Ruby language
+  that can be linked and embedded within an application.
+  Its development is lead by Ruby’s creator Yukihiro “Matz” Matsumoto.
+* [IronRuby][ironruby] is an implementation “tightly integrated with the .NET
+  Framework”.
+* [MagLev][maglev] is “a fast, stable, Ruby implementation with integrated
+  object persistence and distributed shared cache”.
+* [Cardinal][cardinal] is a “Ruby compiler for [Parrot][parrot] Virtual Machine”
+  (Perl 6).
+
+Some of those implementations, including MRI, follow the guidelines of
+[RubySpec][rubyspec], a “complete executable specification for the Ruby
+programming language”.
+
 ### References
 
 <sup>1</sup> Matz, speaking on the Ruby-Talk mailing list, [May 12th,
-2000][2].
+2000][blade].
 {: #fn1}
 
-<sup>2</sup> See the [Ruby on Rails][3] home page for more.
+<sup>2</sup> Matz, in [An Interview with the Creator of Ruby][linuxdevcenter], Nov.
+29th, 2001.
 {: #fn2}
 
-<sup>3</sup> Matz, in [An Interview with the Creator of Ruby][4], Nov.
-29th, 2001.
+<sup>3</sup> Matz, in [Blocks and Closures in Ruby][artima], December 22nd,
+2003.
 {: #fn3}
 
-<sup>4</sup> Matz, in [Blocks and Closures in Ruby][5], December 22nd,
-2003.
-{: #fn4}
 
 
-
-[1]: http://www.rubyist.net/~matz/
-[2]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
-[3]: http://rubyonrails.org/
-[4]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
-[5]: http://www.artima.com/intv/closures2.html
-[6]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
+[matz]: http://www.rubyist.net/~matz/
+[blade]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
+[ror]: http://rubyonrails.org/
+[linuxdevcenter]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
+[artima]: http://www.artima.com/intv/closures2.html
+[tiobe]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
+[jruby]: http://jruby.org
+[rubinius]: http://rubini.us
+[macruby]: http://www.macruby.org
+[mruby]: https://github.com/mruby/mruby
+[ironruby]: http://www.ironruby.net
+[maglev]: http://ruby.gemstone.com
+[cardinal]: https://github.com/parrot/cardinal
+[parrot]: http://parrot.org
+[rubyspec]: http://rubyspec.org

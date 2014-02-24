@@ -3,7 +3,7 @@ layout: news_post
 title: "È stato rilasciato Ruby 2.1.0-preview2"
 author: "nurse"
 translator: "alepore"
-date: 2013-11-22 22:00:00 UTC
+date: 2013-11-22 22:00:00 +0000
 lang: it
 ---
 
@@ -47,7 +47,7 @@ Le modifiche rilevanti sono:
 * RGenGC (Vedi [la presentazione al RubyKaigi](http://rubykaigi.org/2013/talk/S73) e [la presentazione alla RubyConf 2013](http://www.atdot.net/~ko1/activities/rubyconf2013-ko1_pub.pdf) di ko1)
 * refinements [#8481](https://bugs.ruby-lang.org/issues/8481) [#8571](https://bugs.ruby-lang.org/issues/8571)
 * modifiche di sintassi
-  * Decimal/Complex Literal [#8430](https://bugs.ruby-lang.org/issues/8430)
+  * Rational/Complex Literal [#8430](https://bugs.ruby-lang.org/issues/8430)
   * valore di ritorno dei def [#3753](https://bugs.ruby-lang.org/issues/3753)
 * Bignum
   * usa 128bit integers [#8509](https://bugs.ruby-lang.org/issues/8509)

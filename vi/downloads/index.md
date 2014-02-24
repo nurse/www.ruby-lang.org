@@ -6,7 +6,7 @@ lang: vi
 
 Bạn có thể lấy phân phối Ruby mới nhất ở đây.
 Bản ổn định hiện thời là {{ site.downloads.stable.version }}.
-Xin hãy nhớ đọc [Giấy phép Ruby]({{ site.license.url }}).
+Xin hãy nhớ đọc [Giấy phép Ruby][license].
 {: .summary}
 
 ### Ba cách để cài Ruby
@@ -36,13 +36,13 @@ sẵn cho hạ tầng của bạn.
 Nếu bạn gặp vấn đề biên dịch Ruby, bạn nên cân nhắc sử dụng một trong những công
 cụ bên thứ ba trong phân mục tiếp theo.
 
-* [Ruby {{ site.downloads.stable.version }}][1]
+* [Ruby {{ site.downloads.stable.version }}][stable-gz]
   (md5:&nbsp;{{ site.downloads.stable.md5.gz }}) Bản ổn định
-* [Ruby {{ site.downloads.previous.version }}][2]
+* [Ruby {{ site.downloads.previous.version }}][previous-gz]
   (md5:&nbsp;{{ site.downloads.previous.md5.gz }}) Bản trước đó
-* [Snapshot Ổn định][3] Đây là một tarball snapshot mới nhất của
+* [Snapshot Ổn định][stable-snapshot-gz] Đây là một tarball snapshot mới nhất của
   nhánh Ổn định (ruby\_2\_0\_0).
-* [Snapshot Mỗi đêm][4] Đây là một tarball snapshot của mọi thứ có trong
+* [Snapshot Mỗi đêm][nightly-gz] Đây là một tarball snapshot của mọi thứ có trong
   SVN mỗi đêm. Nó có thể có lỗi và một số vấn đề khác, cẩn thận khi sử dụng!
 
 Để biết thêm thông tin về Ruby Subversion và Git repositories, đọc trang
@@ -175,25 +175,29 @@ vài công năng đặc biệt mà MRI không có.
 Sau đây là danh sách:
 
 * [JRuby][21] là Ruby trên nền JVM (Java Virtual Machine), sử dụng trình biên
-  dịch JIT, garbage collectors, concurrent threads, các công cụ và thư viện của JVM.
+  dịch JIT, garbage collectors, concurrent threads, các công cụ và thư viện
+  của JVM.
 * [Rubinius][22] là ‘Ruby viết trong Ruby’. Xây dựng trên nền LLVM,
-  Rubinius cung cấp virtual machine rất tiện dụng để các ngôn ngữ có thể dùng làm
-  nền tảng.
-* [MacRuby][23] là phiên bản Ruby kết nối chặt với thư viện Cocoa cho OS X của Apple.
-  Nó giúp người dùng viết ứng dụng desktop dễ dàng.
-* [Cardinal][24] là một “trình biên dịch Ruby compiler cho [Parrot][25] Virtual Machine”
-  (Perl 6).
+  Rubinius cung cấp virtual machine rất tiện dụng để các ngôn ngữ có thể
+  dùng làm nền tảng.
+* [MacRuby][23] là phiên bản Ruby kết nối chặt với thư viện Cocoa cho OS X
+  của Apple. Nó giúp người dùng viết ứng dụng desktop dễ dàng.
 * [IronRuby][26] là một triển khai “chặt chẽ trên nền .NET Framework”.
 * [MagLev][27] là “một triển khai nhanh và ổn định với integrated
   object persistence và distributed shared cache”.
+* [Cardinal][24] là một “trình biên dịch Ruby compiler cho [Parrot][25]
+  Virtual Machine” (Perl 6).
 
 Một trong những triển khái đấy, bao gồm cả MRI, đều phải đạt đủ điều kiện của chuẩn [RubySpec][28].
 Đấy là một “chuẩn thực thi đầy đủ về ngôn ngữ Ruby”.
 
-[1]: {{ site.downloads.stable.url.gz }}
-[2]: {{ site.downloads.previous.url.gz }}
-[3]: {{ site.downloads.stable_snapshot.url.gz }}
-[4]: {{ site.downloads.nightly_snapshot.url.gz }}
+
+
+[license]: {{ site.license.url }}
+[stable-gz]:   {{ site.downloads.stable.url.gz }}
+[previous-gz]: {{ site.downloads.previous.url.gz }}
+[stable-snapshot-gz]: {{ site.downloads.stable_snapshot.url.gz }}
+[nightly-gz]: {{ site.downloads.nightly_snapshot.url.gz }}
 [5]: https://github.com/vertiginous/pik
 [7]: https://rvm.io/rvm/install/
 [8]: http://rubyinstaller.org/

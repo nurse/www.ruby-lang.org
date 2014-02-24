@@ -12,13 +12,13 @@ praktyczny. O co chodzi ?
 ### Ideały twórcy języka Ruby
 
 Ruby jest językiem starannie dobranej równowagi. Jego twórca, [Yukihiro
-“Matz” Matsumoto][1], połączył części jego ulubionych języków (Perla,
+“Matz” Matsumoto][matz], połączył części jego ulubionych języków (Perla,
 Smalltalka, Eiffel, Ady i Lispa) by uformować nowy język, który
 zbalansował programowanie funkcjonalne wraz z programowanie
 imperatywnym.
 
 Matz często mówi, że chce uczynić ten język naturalnym – nie
-prostym – w sposób odzwierciedlający życie. 
+prostym – w sposób odzwierciedlający życie.
 
 Bazując na tym dodaje:
 
@@ -43,10 +43,11 @@ tematy związane z Rubim, osiągnęła średnio ruch 200 wiadomości dziennie
 w 2006 roku. Zmalało to w ostatnich latach gdy część społeczności
 przeniosło dyskusje z jednej centralnej listy na wiele mniejszych grup.
 
-Wskaźnik [TIOBE indeks][6], który mierzy rozwój języków programowania, umieszcza
-Rubiego na 10 miejscu wśród światowych języków programowania. Wiele owego
-wzrostu zawdzięcza Ruby popularności software napisanego przy jego użyciu,
-szczególnie frameworkowi Ruby on Rails<sup>[2](#fn2)</sup>.
+Ruby jest uplasowany wśród pierwszej dziesiątki na większości indeksów
+mierzących wzrost i popularność języków programowania na świecie (takich jak
+[indeks TIOBE][tiobe]). Wiele owego wzrostu zawdzięcza Ruby popularności
+oprogramowania napisanego przy jego użyciu, szczególnie frameworkowi
+[Ruby on Rails][ror].
 
 Ruby jest także [zupełnie darmowy]({{ site.license.url }}). Darmowe jest nie
 tylko korzystanie, ale również kopiowanie, modyfikowanie i
@@ -56,7 +57,7 @@ rozprowadzanie tego języka.
 
 Początkowo, Matz szukał w innych językach idealnej składni. Wspominając
 swoje poszukiwania, Matz mówi: “Szukałem języka potężniejszego od Perla
-i bardziej obiektowego od Pythona<sup>[3](#fn3)</sup>.”
+i bardziej obiektowego od Pythona<sup>[2](#fn2)</sup>.”
 
 W Rubim, wszystko jest obiektem. Każdy fragment informacji i kodu może
 uzyskać swoje właściwości i czynności. Programowanie obiektowe nazywa
@@ -109,7 +110,7 @@ programistów pochodzących ze środowisk PHP i Visual Basic’a.
 
 Bloki zainspirowane zostały językami funkcjonalnymi. Matz mówił, “w
 blokach Rubiego chciałem oddać szacunek środowisku
-Lispa<sup>[4](#fn4)</sup>.”
+Lispa<sup>[3](#fn3)</sup>.”
 
 {% highlight ruby %}
 search_engines =
@@ -189,26 +190,62 @@ Ruby posiada bogactwo innych właściwości, niektóre z nich to:
   ale może być używany na wielu typach UNIXów, Mac OS X, Windows
   95/98/Me/NT/2000/XP/Vista/7/8, DOS, BeOS, OS/2, itd.
 
+### Inne implementacje Rubiego
+
+Ruby jako język ma kilka różnych implementacji. Ta strona omawia
+bazową implementację, **MRI** (“Matz's Ruby
+Interpreter”) lub **CRuby**, ale są inne.
+Często są użyteczne w niektórych sytuacjach, integrują się z innymi językami
+lub środowiskami lub mają specjalne cechy, których MRI nie ma.
+
+Tu jest lista:
+
+* [JRuby][jruby] jest Rubim na JVM (Java Virtual Machine), wykorzystując
+  optymalizację kompilatorów JIT JVM, odśmiecanie pamięci, współbieżne wątki,
+  narzędzia i kolekcję bibliotek.
+* [Rubinius][rubinius] jest ‘Rubim napisanym w Rubim’. Zbudowanym na szczycie LLVM,
+  Rubinius ukazuje sprytną maszynę wirtualną na bazie której budowane są inne
+  języki.
+* [MacRuby][macruby] jest Rubim ściśle zintegrowanym z bibliotekami Cocoa Apple
+  dla Mac OS X, umożliwiając łatwe pisanie desktopowych aplikacji.
+* [mruby][mruby] jest lekką implementacją języka Ruby, która może być połączona
+  i osadzona w aplikacji.
++  Its development is lead by Ruby’s creator Yukihiro “Matz” Matsumoto.
+* [IronRuby][ironruby] jest implementacją “ściśle zintegrowaną z frameworkiem .NET”.
+* [MagLev][maglev] jest “szybką, stabilną, implementacją Rubiego ze zintegrowaną
+  trwałością obiektów i rozproszonym wpsółdzielonym cachem”.
+* [Cardinal][cardinal] jest “kompilatorem Rubiego dla [Parrot][parrot] Virtual Machine”
+  (Perl 6).
+
+Niektóre z tych implementacji, włączając w to MRI, podążają za wytycznymi
+[RubySpec][rubyspec], “pełna wykonywalna specyfikacja dla języka programowania Ruby”.
+
 ### Odnośniki
 
-<sup>1</sup> Matz, wypowiedź na liście ruby-talk, [May 12th, 2000][2].
+<sup>1</sup> Matz, wypowiedź na liście ruby-talk, [May 12th, 2000][blade].
 {: #fn1}
 
-<sup>2</sup> Zobacz stronę [Ruby on Rails][3] aby dowiedzieć się więcej.
+<sup>2</sup> Matz, w [Wywiad z twórcą języka Ruby][linuxdevcenter], Nov. 29th, 2001.
 {: #fn2}
 
-<sup>3</sup> Matz, w [Wywiad z twórcą języka Ruby][4], Nov. 29th, 2001.
+<sup>3</sup> Matz, w [Bloki i domknięcia w Rubym][artima], December 22nd,
+2003.
 {: #fn3}
 
-<sup>4</sup> Matz, w [Bloki i domknięcia w Rubym][5], December 22nd,
-2003.
-{: #fn4}
 
 
-
-[1]: http://www.rubyist.net/~matz/
-[2]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
-[3]: http://rubyonrails.org/
-[4]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
-[5]: http://www.artima.com/intv/closures2.html
-[6]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
+[matz]: http://www.rubyist.net/~matz/
+[blade]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
+[ror]: http://rubyonrails.org/
+[linuxdevcenter]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
+[artima]: http://www.artima.com/intv/closures2.html
+[tiobe]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
+[jruby]: http://jruby.org
+[rubinius]: http://rubini.us
+[macruby]: http://www.macruby.org
+[mruby]: https://github.com/mruby/mruby
+[ironruby]: http://www.ironruby.net
+[maglev]: http://ruby.gemstone.com
+[cardinal]: https://github.com/parrot/cardinal
+[parrot]: http://parrot.org
+[rubyspec]: http://rubyspec.org

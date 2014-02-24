@@ -3,7 +3,7 @@ layout: news_post
 title: "Ruby 2.1.0-preview2 veröffentlicht"
 author: "nurse"
 translator: "Quintus"
-date: 2013-11-22 22:00:00 UTC
+date: 2013-11-22 22:00:00 +0000
 lang: de
 ---
 
@@ -50,7 +50,7 @@ Die auffälligsten Änderungen sind:
   [RubyConf-2013-Präsentation](http://www.atdot.net/~ko1/activities/rubyconf2013-ko1_pub.pdf)
 * Refinements [#8481](https://bugs.ruby-lang.org/issues/8481) [#8571](https://bugs.ruby-lang.org/issues/8571)
 * Syntaxänderungen
-  * Decimal/Complex-Literal
+  * Rational/Complex-Literal
     [#8430](https://bugs.ruby-lang.org/issues/8430)
   * Rückgabewert von `def` [#3753](https://bugs.ruby-lang.org/issues/3753)
 * Bignum

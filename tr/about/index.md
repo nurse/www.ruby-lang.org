@@ -12,7 +12,7 @@ olarak tanımlarlar. Peki Ruby size neler vaad ediyor?
 ### Ruby’nin Yaratıcısının İdealleri
 
 Ruby dengenin dilidir. Ruby’nin yaratıcısı [Yukihiro “Matz”
-Matsumoto][1] en sevdiği dillerin (Perl, Smalltalk, Eiffel, Ada, ve
+Matsumoto][matz] en sevdiği dillerin (Perl, Smalltalk, Eiffel, Ada, ve
 Lisp) en iyi özelliklerini harmanlayarak fonksiyonel programlama ile
 imperativ programlamaya dayanan yeni bir dil yaratmayı amaçlamıştır.
 
@@ -40,10 +40,10 @@ Ruby-Talk, en çok kullanılan Ruby [e-posta
 listesi](/en/community/mailing-lists/) günde ortalama 200 mesaj
 trafiğine sahiptir.
 
-Programlama dillerinin popülaritesini araştıran [TIOBE][6] istatistiklerine
+Programlama dillerinin popülaritesini araştıran [TIOBE][tiobe] istatistiklerine
 göre, Ruby dünya çapında en çok kullanılan 10.cu dil haline gelmiştir.
-Ruby’nin bu hızlı büyümesinde Ruby on Rails
-framework’ünün<sup>[2](#fn2)</sup> hatırı sayılır etkisi bulunmaktadır.
+Ruby’nin bu hızlı büyümesinde [Ruby on Rails][ror] framework’ünün
+hatırı sayılır etkisi bulunmaktadır.
 
 Ruby aynı zamanda [tamamen özgür]({{ site.license.url }}) bir dildir. Ruby size
 yalnızca sorumluluk anlamında bir özgürlük değil, aynı zamanda kullanma,
@@ -54,7 +54,7 @@ kopyalama, düzenleme ve dağıtma özgürlüğü de sunar.
 Matz yeni bir dil yaratmadan önce ideal sözdizimini bulmak için diğer
 programlama dillerini incelemiş ve araştırmasının sonunda “Perl’den daha
 güçlü ama Pyton’dan daha nesneye yönelik bir betik
-dili<sup>[3](#fn3)</sup>” istediğini söylemiştir.
+dili<sup>[2](#fn2)</sup>” istediğini söylemiştir.
 
 Ruby’de herşey bir nesnedir. Gördüğünüz en ufak bilgi parçası ve kod
 kendi özelliklerine ve olaylarına sahiptir. Özellikleri isimle çağırma
@@ -107,7 +107,7 @@ dönüşmüştür.
 
 Bloklar fonksiyonel dillerden esinlenilerek Ruby’ye getirilmiştir. Matz
 “Ruby kapamalarında, Lisp kültürüne saygı göstermek
-istedim<sup>[4](#fn4)</sup>.” demiştir.
+istedim<sup>[3](#fn3)</sup>.” demiştir.
 
 {% highlight ruby %}
 search_engines =
@@ -188,25 +188,21 @@ bahsedilmiştir:
 
 ### Referanslar
 
-<sup>1</sup> Matz, Ruby-Talk e-posta listesi, [12 Mayıs, 2000][2].
+<sup>1</sup> Matz, Ruby-Talk e-posta listesi, [12 Mayıs, 2000][blade].
 {: #fn1}
 
-<sup>2</sup> Daha fazla bilgi için [Ruby on Rails][3] ana sayfasını
-ziyaret edin.
+<sup>2</sup> Matz, [Ruby’nin Yaratıcısı İle Bir Söyleşi][linuxdevcenter], Kasım.
+29th, 2001.
 {: #fn2}
 
-<sup>3</sup> Matz, [Ruby’nin Yaratıcısı İle Bir Söyleşi][4], Kasım.
-29th, 2001.
+<sup>3</sup> Matz, [Ruby’de Bloklar ve Kapamalar][artima], 22 Aralık, 2003.
 {: #fn3}
 
-<sup>4</sup> Matz, [Ruby’de Bloklar ve Kapamalar][5], 22 Aralık, 2003.
-{: #fn4}
 
 
-
-[1]: http://www.rubyist.net/~matz/
-[2]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
-[3]: http://rubyonrails.org/
-[4]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
-[5]: http://www.artima.com/intv/closures2.html
-[6]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
+[matz]: http://www.rubyist.net/~matz/
+[blade]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
+[ror]: http://rubyonrails.org/
+[linuxdevcenter]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
+[artima]: http://www.artima.com/intv/closures2.html
+[tiobe]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html

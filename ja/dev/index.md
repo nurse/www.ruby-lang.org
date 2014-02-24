@@ -24,10 +24,10 @@ Rubyの不具合や機能追加の要望などは[問題追跡システム][2]�
 ## ソースコード
 
 開発中のソースコードはAnonymous SVNから取得できます。
-詳しくは[レポジトリガイド](/ja/documentation/repository-guide)のページを参照してください。
+詳しくは[リポジトリガイド](/ja/documentation/repository-guide)のページを参照してください。
 
-また、毎日、日本時間の午前4時頃に、開発版系列(現在はruby 1.9)および安定版系列(現在はruby
-1.8)のソースコードのスナップショットを作成しています。 それぞれ、以下のリンクからダウンロードできます。
+また、毎日、日本時間の午前4時頃に、開発版系列(現在はruby 2.2)および安定版系列(現在はruby
+2.1)のソースコードのスナップショットを作成しています。 それぞれ、以下のリンクからダウンロードできます。
 
 * [開発版スナップショット][3]
 * [安定版スナップショット][4]
@@ -47,6 +47,6 @@ Posted by usa on 13 Aug 2008
 
 
 [1]: https://bugs.ruby-lang.org/projects/ruby/wiki
-[2]: https://bugs.ruby-lang.org/projects/show/ruby
+[2]: https://bugs.ruby-lang.org/projects/ruby
 [3]: {{ site.downloads.nightly_snapshot.url.gz }}
 [4]: {{ site.downloads.stable_snapshot.url.gz }}

@@ -25,6 +25,16 @@ license:
 
 downloads:
   stable:
+    version: 2.1.0
+    url:
+      bz2: http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.0.tar.bz2
+      gz: http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.0.tar.gz
+      zip: http://cache.ruby-lang.org/pub/ruby/2.1/ruby-2.1.0.zip
+    md5:
+      bz2: 1546eeb763ac7754365664be763a1e8f
+      gz: 9e6386d53f5200a3e7069107405b93f7
+      zip: 2fc3a80b56da81b906a9bb6fc7ca8399
+  previous:
     version: 2.0.0-p353
     url:
       bz2: http://cache.ruby-lang.org/pub/ruby/2.0/ruby-2.0.0-p353.tar.bz2
@@ -34,7 +44,7 @@ downloads:
       bz2: 20eb8f067d20f6b76b7e16cce2a85a55
       gz: 78282433fb697dd3613613ff55d734c1
       zip: 0f8aeb1f1b1cd606ab9790badabd0fb4
-  previous:
+  previous19:
     version: 1.9.3-p484
     url:
       bz2: http://cache.ruby-lang.org/pub/ruby/1.9/ruby-1.9.3-p484.tar.bz2
@@ -143,8 +153,8 @@ locales:
         url: /id/community
       - text: Berita
         url: /id/news
-#     - text:
-#       url: /id/security
+      - text: Keamanan
+        url: /id/security
       - text: Tentang Ruby
         url: /id/about
     it:
@@ -205,8 +215,8 @@ locales:
         url: /pl/community
       - text: Wiadomości
         url: /pl/news
-#     - text:
-#       url: /pl/security
+      - text: Bezpieczeństwo
+        url: /pl/security
       - text: O języku Ruby
         url: /pl/about
     pt:
@@ -458,7 +468,7 @@ locales:
       description: ruby-lang.orgの最新ニュース
       lang_code: ja
     ko:
-      title: Ruby-Lang의 최근 소식
+      title: 루비 뉴스
       description: ruby-lang.org의 최근 소식
       lang_code: ko-KR
     pl:
@@ -743,11 +753,6 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             Докладвайте или помогнете за решаването на проблеми в Ruby.
-      top_ruby_projects:
-        text: Няколко топ Ruby проекта
-        more:
-          text: Още…
-          url: /bg/libraries/top-projects/
       syndicate:
         text: Новини
         recent_news:
@@ -806,11 +811,6 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             Melde einen Fehler oder hilf mit, offene Fehler zu beseitigen.
-      top_ruby_projects:
-        text: Beliebte Ruby-Projekte
-        more:
-          text: Mehr…
-          url: /de/libraries/top-projects/
       syndicate:
         text: Syndication
         recent_news:
@@ -869,11 +869,6 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             Report or help solve issues in Ruby.
-      top_ruby_projects:
-        text: Some Top Ruby Projects
-        more:
-          text: More…
-          url: /en/libraries/top-projects/
       syndicate:
         text: Syndicate
         recent_news:
@@ -932,11 +927,6 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             Reporta o ayuda a resolver problemas en Ruby.
-#     top_ruby_projects:
-#       text: Algunos proyectos populares
-#       more:
-#         text: Leer más…
-#         url: /en/libraries/top-projects/
       syndicate:
         text: Feeds de noticias (RSS)
         recent_news:
@@ -995,11 +985,6 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             aidez à corriger et améliorer Ruby.
-      top_ruby_projects:
-        text: Projets populaires
-        more:
-          text: Plus de projets…
-          url: /fr/libraries/top-projects/
       syndicate:
         text: Syndication
         recent_news:
@@ -1060,11 +1045,6 @@ locales:
 #         url: https://bugs.ruby-lang.org/
 #         description: |
 #           Report or help solve issues in Ruby.
-      top_ruby_projects:
-        text: Proyek Ruby Terpopuler
-        more:
-          text: Lagi…
-          url: /id/libraries/top-projects/
       syndicate:
         text: Sindikasi Web
         recent_news:
@@ -1124,11 +1104,6 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             Segnalaci o aiutaci a risolvere problemi in Ruby
-      top_ruby_projects:
-        text: Progetti Importanti in Ruby
-        more:
-          text: Altro…
-          url: /it/libraries/top-projects/
       syndicate:
         text: Feed RSS
         recent_news:
@@ -1187,11 +1162,6 @@ locales:
 #         url: https://bugs.ruby-lang.org/
 #         description: |
 #           Report or help solve issues in Ruby.
-      top_ruby_projects:
-        text: RubyForge トッププロジェクト
-        more:
-          text: もっと読む…
-          url: /en/libraries/top-projects/
       syndicate:
         text: Syndicate
         recent_news:
@@ -1220,9 +1190,9 @@ locales:
         libraries:
           text: 라이브러리
           url: /ko/libraries/
-#       success_stories:
-#         text: Success Stories
-#         url: /en/documentation/success-stories/
+        success_stories:
+          text: 사용 사례
+          url: /ko/documentation/success-stories/
       participate:
         text: <strong>커뮤니티에 참여하기</strong>
         mailing_lists:
@@ -1230,31 +1200,26 @@ locales:
           url: http://groups.google.com/group/rubykr
           description: |
             한국의 루비스트를 만나세요
-#       user_groups:
-#         text: User Groups
-#         url: /en/community/user-groups/
-#         description: |
-#           Get in contact with Rubyists in your area.
-#       weblogs:
-#         text: Weblogs
-#         url: /en/community/weblogs/
-#         description: |
-#           Read about what’s happening right now in the Ruby community.
-#       ruby_core:
-#         text: Ruby Core
-#         url: /en/community/ruby-core/
-#         description: |
-#           Help polish the rough edges of the latest Ruby.
-#       issue_tracking:
-#         text: Issue Tracking
-#         url: https://bugs.ruby-lang.org/
-#         description: |
-#           Report or help solve issues in Ruby.
-      top_ruby_projects:
-        text: 활발한 루비 프로젝트
-        more:
-          text: 더보기
-          url: /en/libraries/top-projects/
+        user_groups:
+          text: 유저 그룹
+          url: /ko/community/user-groups/
+          description: |
+            근처의 루비스트와 연락하기
+        weblogs:
+          text: 웹로그
+          url: /ko/community/weblogs/
+          description: |
+            루비 커뮤니티에서 지금 무슨 일이 일어나는지 읽기
+        ruby_core:
+          text: 루비 코어
+          url: /ko/community/ruby-core/
+          description: |
+            최신판 루비의 연마를 돕기
+        issue_tracking:
+          text: 이슈 관리
+          url: https://bugs.ruby-lang.org/
+          description: |
+            루비에 관한 이슈를 제보하거나 해결을 돕기
       syndicate:
         text: 구독
         recent_news:
@@ -1310,16 +1275,11 @@ locales:
           url: /en/community/ruby-core/
           description: |
             Pomóż dopracować najnowszą wersję Rubiego.
-#       issue_tracking:
-#         text: Issue Tracking
-#         url: https://bugs.ruby-lang.org/
-#         description: |
-#           Report or help solve issues in Ruby.
-      top_ruby_projects:
-        text: Najlepsze Projekty
-        more:
-          text: Więcej…
-          url: /en/libraries/top-projects/
+        issue_tracking:
+          text: Śledzenie problemów
+          url: https://bugs.ruby-lang.org/
+          description: |
+            Zgłoś lub pomóż rozwiązać problemy w Rubim.
       syndicate:
         text: Syndicate
         recent_news:
@@ -1379,11 +1339,6 @@ locales:
 #         url: https://bugs.ruby-lang.org/
 #         description: |
 #           Report or help solve issues in Ruby.
-      top_ruby_projects:
-        text: Top de projectos de Ruby
-        more:
-          text: Saber mais…
-          url: /pt/libraries/top-projects/
       syndicate:
         text: Feeds de noticias (RSS)
         recent_news:
@@ -1442,11 +1397,6 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             Сообщайте или помогите решить проблемы в Ruby.
-      top_ruby_projects:
-        text: Лучшие проекты на Ruby
-        more:
-          text: Ещё…
-          url: /ru/libraries/top-projects/
       syndicate:
         text: Синдикат
         recent_news:
@@ -1505,11 +1455,6 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             Ruby sorunlarını rapor edin ya da çözümüne yardım edin.
-#     top_ruby_projects:
-#       text: Bazı Popüler Ruby Projeleri
-#       more:
-#         text: Daha…
-#         url: /tr/libraries/top-projects/
       syndicate:
         text: Takip Edin
         recent_news:
@@ -1568,11 +1513,6 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             Báo hoặc giúp xử lý các lỗi trong Ruby.
-      top_ruby_projects:
-        text: Những dự án Ruby hàng đầu
-        more:
-          text: Nhiều hơn nữa…
-          url: /vi/libraries/top-projects/
       syndicate:
         text: Syndicate
         recent_news:
@@ -1580,12 +1520,12 @@ locales:
           url: /vi/feeds/news.rss
     zh_tw:
       get_started:
-        text: <strong>上手入門</strong>, 一點都不難!
+        text: <strong>上手入門</strong>，一點都不難!
         try_ruby:
           text: 在瀏覽器中試用 Ruby!
           <<: *try_ruby
         quickstart:
-          text: 20分鐘 Ruby 體驗
+          text: 20 分鐘 Ruby 體驗
           url: /zh_tw/documentation/quickstart/
         ruby_from_other_languages:
           text: 從其他語言到 Ruby
@@ -1631,15 +1571,10 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             回報或解決 Ruby 問題
-      top_ruby_projects:
-        text: 熱門的 Ruby 專案
-        more:
-          text: 更多專案…
-          url: /zh_tw/libraries/top-projects/
       syndicate:
         text: 訂閱
         recent_news:
-          text: 最新消息 (RSS)
+          text: 最新消息（RSS）
           url: /zh_tw/feeds/news.rss
     zh_cn:
       get_started:
@@ -1694,11 +1629,6 @@ locales:
           url: https://bugs.ruby-lang.org/
           description: |
             报告或帮助解决 Ruby 的问题
-      top_ruby_projects:
-        text: 优秀的 Ruby 工程
-        more:
-          text: 更多...
-          url: /en/libraries/top-projects/
       syndicate:
         text: 订阅
         recent_news:
@@ -1778,15 +1708,15 @@ locales:
 #     subscribe: Subscribe
 #     unsubscribe: Unsubscribe
 #     submit: Submit Form
-#   ko:
-#     list: Mailing List
-#     first_name: First Name
-#     last_name: Last Name
-#     email: Email Address
-#     action: Action
-#     subscribe: Subscribe
-#     unsubscribe: Unsubscribe
-#     submit: Submit Form
+    ko:
+      list: 메일링 리스트
+      first_name: 이름
+      last_name: 성
+      email: 이메일 주소
+      action: 할일
+      subscribe: 구독하기
+      unsubscribe: 구독 해지
+      submit: 제출하기
     pl:
       list: Mailing List
       first_name: First Name
@@ -1842,7 +1772,7 @@ locales:
       unsubscribe: 退订
       submit: 提交表格
     zh_tw:
-      list: 郵件組
+      list: 郵件論壇
       first_name: 名
       last_name: 姓
       email: 電子郵件
@@ -1856,6 +1786,8 @@ locales:
     en: "This site in other languages:"
     fr: "Autres langues disponibles :"
     it: "Questo sito in altre lingue:"
+    pl: "Ta strona w innych językach:"
+    ru: "Этот сайт на других языках:"
 
   credits:
     bg: |
@@ -1907,9 +1839,17 @@ locales:
       このサイトはRubyと<a href="http://www.jekyllrb.com/">Jekyll</a>によって構築されています。
       また、コンテンツはRubyコミュニティによって管理されています。
       このサイトに関する質問やコメントは<a href="https://github.com/ruby/www.ruby-lang.org/">GitHub</a>へのissueまたはpull request、もしくは<a href="mailto:webmaster@ruby-lang.org">webmaster</a> までお願いします。
+    ko: |
+      이 사이트는 루비와 <a href="http://www.jekyllrb.com/">Jekyll</a>로 구축되어 있고,
+      루비 커뮤니티의 구성원들이 직접 관리합니다.
+      이 사이트는 <a href="http://twitter.com/jz">Jason Zimdars</a>님이 디자인했습니다.
+      <a href="https://github.com/ruby/www.ruby-lang.org/">GitHub</a>에서 기여하실 수 있으며
+      이 사이트에 관한 질문이나 연락은 <a href="mailto:webmaster@ruby-lang.org">웹마스터</a>에게
+      하실 수 있습니다.
     pl: |
       Serwis powstał w języku Ruby przy użyciu <a href="http://www.jekyllrb.com/">Jekyll</a>.
       Utrzymaniem serwisu zajmuje się społeczność Rubiego.
+      Projekt strony <a href="http://twitter.com/jz">Jason Zimdars</a>.
       Proszę udziel nam wsparcia na <a href="https://github.com/ruby/www.ruby-lang.org/">GitHub</a>
       lub skontaktuj się z naszym <a href="mailto:webmaster@ruby-lang.org">webmasterem</a>
       jeśli masz jakieś pytania lub komentarze dotyczące tego serwisu.
@@ -1917,7 +1857,7 @@ locales:
       Данный сайт сгенерирован на Ruby с использованием <a href="http://www.jekyllrb.com/">Jekyll</a>.
       Он с гордостью поддерживается членами сообщества Ruby. Пожалуйста, участвуйте в разработке на
       <a href="https://github.com/ruby/www.ruby-lang.org/">GitHub</a> или свяжитесь с нашим
-      <a href="mailto:webmaster@ruby-lang.org">администратором</a> если у вас есть вопросы или комментарии по
+      <a href="mailto:webmaster@ruby-lang.org">администратором</a>, если у вас есть вопросы или комментарии по
       данному веб-сайту.
     vi: |
       Website này được tạo ra với Ruby sử dụng <a href="http://www.jekyllrb.com/">Jekyll</a>.
@@ -1930,10 +1870,14 @@ locales:
       请贡献代码至 <a href="https://github.com/ruby/www.ruby-lang.org/">GitHub</a>。
       如有任何疑问和意见，请联系我们的<a href="mailto:webmaster@ruby-lang.org">站点管理员</a>。
     zh_tw: |
-      本網站使用 Ruby 套件 <a href="http://www.jekyllrb.com/">Jekyll</a> 產生，並由引以為傲的 Ruby 社群成員共同維護。
+      本網站使用 Ruby 套件 <a href="http://www.jekyllrb.com/">Jekyll</a> 產生，並有幸由 Ruby 社群成員共同維護。
       請至 <a href="https://github.com/ruby/www.ruby-lang.org/">GitHub</a> 幫忙貢獻。關於本站的問題與意見，
       請聯絡<a href="mailto:webmaster@ruby-lang.org">網站管理員</a>。
 
   logo_credit:
     en: |
       <a href="/en/about/logo/">The Ruby Logo</a> is Copyright &copy; 2006, Yukihiro Matsumoto; licensed under the terms of the <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a>.
+    pl: |
+      <a href="/pl/about/logo/">Logo Rubiego</a> jest Zastrzeżone &copy; 2006, Yukihiro Matsumoto; licencjonowane na warunkach <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a>.
+    ru: |
+      Права на <a href="/ru/about/logo/">логотип Ruby</a> принадлежат Yukihiro Matsumoto (&copy; 2006) на условиях лицензии <a href="http://creativecommons.org/licenses/by-sa/2.5/">CC BY-SA 2.5</a>.

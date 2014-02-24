@@ -5,70 +5,23 @@ lang: zh_cn
 ---
 
 在这里可以下载到适合您的最新的 Ruby 版本，当前稳定的版本是
-{{ site.downloads.stable.version }} 。下载前请先阅读 [Ruby 开源许可][1] 。
+{{ site.downloads.stable.version }} 。下载前请先阅读 [Ruby 开源许可][license] 。
 
 ### Ruby 源代码
 
 如果您欲使之与您的平台更为兼容或者需要专一设置您的环境，那么从源代码安装是最好的解决方案。如果有预先做好的 packages
 需要安装到您的平台上，这也是一个好的方法。
 
-* [Ruby {{ site.downloads.stable.version }}][2]
+* [Ruby {{ site.downloads.stable.version }}][stable-gz]
   (md5:&nbsp;{{ site.downloads.stable.md5.gz }}) 稳定版 (*推荐*)
-* [稳定版快照][3] 这里的 tar’ed 和 gzip’ed 文件是最新稳定的 CVS。它应该比上次发布的版本更稳定。
-* [开发版快照][4] 这里的 tar’ed 和 gzip’ed 文件是最新的 CVS。它可能包含一些没有解决的问题。
+* [稳定版快照][stable-snapshot-gz] 这里的 tar’ed 和 gzip’ed 文件是最新稳定的 CVS。它应该比上次发布的版本更稳定。
+* [开发版快照][nightly-gz] 这里的 tar’ed 和 gzip’ed 文件是最新的 CVS。它可能包含一些没有解决的问题。
 
 更多信息见 [Ruby Core](/zh_cn/community/ruby-core/) 页。
 
 ### 镜像站
 
-在世界各地的镜像站上面已经有 Ruby 的源代码了，你可以选择就近的地方下载。
-
-#### HTTP 镜像站
-
-* [CDN][64] (fastly.com)
-* [Japan 1][63] (Master) - HTTPS
-* [Japan 2][50] and [mirror][32] (RingServer)
-* [Britain][49] (The Mirror Service)
-* [Germany][51] (AmbiWeb GmbH)
-* [Belgium][52] (Easynet)
-* [Denmark][53] (sunsite.dk)
-* [Holland][54] (XS4ALL) - only release packages
-* [USA 1][55] (ibiblio.org)
-* [USA 2][56] (lcs.mit.edu)
-* [USA 3][57] (binarycode.org)
-* [USA 4][58] (online-mirror.org)
-* [USA 5][59] (trexle.com)
-* [Austria][60] (tuwien.ac.at)
-* [Taiwan 1][61] (cdpa.nsysu.edu.tw)
-* [Taiwan 2][62] (ftp.cs.pu.edu.tw)
-* [China 1][65] (ruby.taobao.org)
-
-#### FTP 镜像站
-
-* [Japan 1][35] (Master: ruby-lang.org)
-* [Japan 2][31] and [mirror][32] (RingServer)
-* [Japan 3][33] (IIJ)
-* [South Korea][36] (Korea FreeBSD Users Group)
-* [Germany][37] (FU Berlin)
-* [Britain][38] (The Mirror Service)
-* [Belgium][39] (Easynet)
-* [Russia][40] (ChgNet)
-* [Greece][41] (ntua.gr)
-* [Denmark][42] (sunsite.dk)
-* [USA 1][43] (ibiblio.org)
-* [USA 2][44] (lcs.mit.edu)
-* [Austria][45] (tuwien.ac.at)
-* [Taiwan 1][46] (cdpa.nsysu.edu.tw)
-* [Taiwan 2][47] (ftp.cs.pu.edu.tw)
-* [Canada][48] (mirror.cs.mun.ca)
-
-#### rsync 镜像
-
-* rsync://rsync.mirrorservice.org/ftp.ruby-lang.org/pub/ruby/ (Britain)
-* rsync://sunsite.dk/ftp/mirrors/ruby/ (Denmark)
-* rsync://gd.tuwien.ac.at/languages/ruby/ (Austria)
-* rsync://mirror.cs.mun.ca/ruby/ (Canada)
-* rsync://ftp.cs.pu.edu.tw/Ruby/ (Taiwan)
+在世界各地的[镜像站][mirrors]上面已经有 Ruby 的源代码了，你可以选择就近的地方下载。
 
 ### Windows 系统
 
@@ -125,10 +78,11 @@ LightTPD, and MySQL on Tiger*][15] 将快速的教您启动和运行。
 
 
 
-[1]: {{ site.license.url }}
-[2]: {{ site.downloads.stable.url.gz }}
-[3]: {{ site.downloads.stable_snapshot.url.gz }}
-[4]: {{ site.downloads.nightly_snapshot.url.gz }}
+[license]: {{ site.license.url }}
+[stable-gz]:   {{ site.downloads.stable.url.gz }}
+[stable-snapshot-gz]: {{ site.downloads.stable_snapshot.url.gz }}
+[nightly-gz]: {{ site.downloads.nightly_snapshot.url.gz }}
+[mirrors]: /en/downloads/mirrors/
 [5]: http://rubyinstaller.org/
 [6]: http://rubyforge.org/frs/download.php/29263/ruby186-26.exe
 [7]: ftp://ftp.ruby-lang.org/pub/ruby/binaries/mswin32/ruby-1.8.6-p111-i386-mswin32.zip
@@ -153,37 +107,3 @@ LightTPD, and MySQL on Tiger*][15] 将快速的教您启动和运行。
 [26]: http://www.ironruby.net
 [27]: http://ruby.gemstone.com
 [28]: http://rubyspec.org
-[31]: ftp://core.ring.gr.jp/pub/lang/ruby/
-[32]: http://www.t.ring.gr.jp/
-[33]: ftp://ftp.iij.ad.jp/pub/lang/ruby/
-[35]: ftp://ftp.ruby-lang.org/pub/ruby/
-[36]: ftp://ftp.kr.freebsd.org/pub/ruby/
-[37]: ftp://ftp.fu-berlin.de/unix/languages/ruby/
-[38]: ftp://ftp.mirrorservice.org/sites/ftp.ruby-lang.org/pub/ruby/
-[39]: ftp://ftp.easynet.be/ruby/ruby/
-[40]: ftp://ftp.chg.ru/pub/lang/ruby/
-[41]: ftp://ftp.ntua.gr/pub/lang/ruby/
-[42]: ftp://sunsite.dk/mirrors/ruby/
-[43]: ftp://www.ibiblio.org/pub/languages/ruby/
-[44]: ftp://xyz.lcs.mit.edu/pub/ruby/
-[45]: ftp://gd.tuwien.ac.at/languages/ruby/
-[46]: ftp://ruby.cdpa.nsysu.edu.tw/ruby/
-[47]: ftp://ftp.cs.pu.edu.tw/Unix/lang/Ruby/
-[48]: ftp://mirror.cs.mun.ca/pub/mirror/ruby/
-[49]: http://www.mirrorservice.org/sites/ftp.ruby-lang.org/pub/ruby/
-[50]: http://www.dnsbalance.ring.gr.jp/archives/lang/ruby/
-[51]: http://dl.ambiweb.de/mirrors/ftp.ruby-lang.org/
-[52]: http://ruby.mirror.easynet.be/
-[53]: http://mirrors.sunsite.dk/ruby/
-[54]: http://www.xs4all.nl/~hipster/lib/mirror/ruby/
-[55]: http://www.ibiblio.org/pub/languages/ruby/
-[56]: http://xyz.lcs.mit.edu/ruby/
-[57]: http://www.binarycode.org/ruby/
-[58]: http://www.online-mirror.org/ruby/
-[59]: http://ruby.trexle.com/
-[60]: http://gd.tuwien.ac.at/languages/ruby/
-[61]: http://pluto.cdpa.nsysu.edu.tw/ruby/
-[62]: http://ftp.cs.pu.edu.tw/Unix/lang/Ruby/
-[63]: https://ftp.ruby-lang.org/pub/ruby/
-[64]: http://cache.ruby-lang.org/pub/ruby/
-[65]: http://ruby.taobao.org/mirrors/ruby/

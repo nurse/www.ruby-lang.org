@@ -4,8 +4,8 @@ title: "下載安裝"
 lang: zh_tw
 ---
 
-你可以在這裡下載適合您的最新 Ruby 發佈版本。目前最新的穩定版本是
-{{ site.downloads.stable.version }}。另外，請先閱讀 [Ruby 版權說明]({{ site.license.url }})。
+您可以在這裡下載適合最新的 Ruby 發行版。目前最新的穩定版本是
+{{ site.downloads.stable.version }}。另外，請先閱讀 [Ruby 版權說明][license]。
 {: .summary}
 
 ### 三種方式可安裝 Ruby
@@ -26,64 +26,18 @@ lang: zh_tw
 
 若編譯 Ruby 時遇到任何問題，考慮看看使用下節羅列的第三方工具。
 
-* [Ruby {{ site.downloads.stable.version }}][1]
+* [Ruby {{ site.downloads.stable.version }}][stable-gz]
   (md5:&nbsp;{{ site.downloads.stable.md5.gz }}) 穩定版
-* [Ruby {{ site.downloads.previous.version }}][2]
-  (md5:&nbsp;{{ site.downloads.previous.md5.gz }}) 前穩定版
-* [Stable Snapshot][3] 穩定版（ruby_2_0_0 分支）的最新快照。
-* [Nightly Snapshot][4] 這是 SVN 上的 tarball，每晚更新，可能有問題或 bug，小心使用。
+* [Ruby {{ site.downloads.previous.version }}][previous-gz]
+  (md5:&nbsp;{{ site.downloads.previous.md5.gz }}) 穩定前一版
+* [Ruby {{ site.downloads.previous19.version }}][old-gz]
+  (md5:&nbsp;{{ site.downloads.previous19.md5.gz }}) 1.9 上一版
+* [Stable Snapshot][stable-snapshot-gz] 穩定版（ruby\_2\_1 分支）的最新快照。
+* [Nightly Snapshot][nightly-gz] 這是 SVN 上的 tarball，每晚更新，可能有問題或 bug，小心使用。
 
 關於 Ruby Subversion 與 Git Repositories 的資訊，參見 [Ruby Core](/en/community/ruby-core/) 頁面。
 
-### 鏡像站
-
-Ruby 原始碼可從世界各地的鏡像站獲得。請嘗試離您最近的鏡像站。
-
-#### 透過 HTTP 的鏡像站
-
-* [CDN][64] (fastly.com)
-* [Japan 1][63] (Master) - HTTPS
-* [Japan 2][50] and [mirror][32] (RingServer)
-* [Britain][49] (The Mirror Service)
-* [Germany][51] (AmbiWeb GmbH)
-* [Belgium][52] (Easynet)
-* [Denmark][53] (sunsite.dk)
-* [Holland][54] (XS4ALL) - only release packages
-* [USA 1][55] (ibiblio.org)
-* [USA 2][56] (lcs.mit.edu)
-* [USA 3][57] (binarycode.org)
-* [USA 4][58] (online-mirror.org)
-* [USA 5][59] (trexle.com)
-* [Austria][60] (tuwien.ac.at)
-* [Taiwan 1][61] (cdpa.nsysu.edu.tw)
-* [Taiwan 2][62] (ftp.cs.pu.edu.tw)
-
-#### 透過 FTP 的鏡像站
-
-* [Japan 1][35] (Master: ruby-lang.org)
-* [Japan 2][31] and [mirror][32] (RingServer)
-* [Japan 3][33] (IIJ)
-* [South Korea][36] (Korea FreeBSD Users Group)
-* [Germany][37] (FU Berlin)
-* [Britain][38] (The Mirror Service)
-* [Belgium][39] (Easynet)
-* [Russia][40] (ChgNet)
-* [Greece][41] (ntua.gr)
-* [Denmark][42] (sunsite.dk)
-* [USA 1][43] (ibiblio.org)
-* [USA 2][44] (lcs.mit.edu)
-* [Austria][45] (tuwien.ac.at)
-* [Taiwan 1][46] (cdpa.nsysu.edu.tw)
-* [Taiwan 2][47] (ftp.cs.pu.edu.tw)
-* [Canada][48] (mirror.cs.mun.ca)
-
-#### 透過 rsync 的鏡像站
-
-* rsync://rsync.mirrorservice.org/ftp.ruby-lang.org/pub/ruby/ (Britain)
-* rsync://sunsite.dk/ftp/mirrors/ruby/ (Denmark)
-* rsync://gd.tuwien.ac.at/languages/ruby/ (Austria)
-* rsync://mirror.cs.mun.ca/ruby/ (Canada)
-* rsync://ftp.cs.pu.edu.tw/Ruby/ (Taiwan)
+Ruby 原始碼可從世界各地的[鏡像站][mirrors]獲得。請嘗試離您最近的鏡像站。
 
 ### 第三方工具
 {: #third-party-tools}
@@ -175,16 +129,22 @@ Ruby 語言有許多不同的實作。官方使用 C 語言實作的 Ruby 叫做
 * [JRuby][21] 是構建於 JVM（Java Virtual Machine）之上的 Ruby，利用了 JVM 優化的 JIT 編譯器、垃圾蒐集器、並行執行緒、工具生態圈、其許多 Java 的函式庫。
 * [Rubinius][22] 是用 Ruby 寫的 Ruby，構建於 LLVM。
 * [MacRuby][23] 是與 Apple 的 Cocoa 函式庫高度整合的 Ruby 實作，允許你輕鬆寫出桌上型應用。
-* [Cardinal][24] 是給 [Parrot][25] 虛擬機用的 Ruby 編譯器。
+* [mruby][mruby] 是 Ruby 的輕量化實作，可嵌入或引用到應用程式裡。目前由松本行弘 “Matz” 領導開發。
 * [IronRuby][26] 是與 .NET 框架高度整合的 Ruby 實現。
 * [MagLev][27] 具有物件持久性、分布共享快取的特性，是個高速、穩定的 Ruby 實作。
+* [Cardinal][24] 是給 [Parrot][25] 虛擬機用的 Ruby 編譯器。
 
 MRI 與某些實作遵循 [RubySpec][28]，Ruby 程式語言的完整規格文件。
 
-[1]: {{ site.downloads.stable.url.gz }}
-[2]: {{ site.downloads.previous.url.gz }}
-[3]: {{ site.downloads.stable_snapshot.url.gz }}
-[4]: {{ site.downloads.nightly_snapshot.url.gz }}
+
+
+[license]: {{ site.license.url }}
+[stable-gz]:   {{ site.downloads.stable.url.gz }}
+[previous-gz]: {{ site.downloads.previous.url.gz }}
+[old-gz]:      {{ site.downloads.previous19.url.gz }}
+[stable-snapshot-gz]: {{ site.downloads.stable_snapshot.url.gz }}
+[nightly-gz]: {{ site.downloads.nightly_snapshot.url.gz }}
+[mirrors]: /en/downloads/mirrors/
 [5]: https://github.com/vertiginous/pik
 [7]: https://rvm.io/rvm/install/
 [8]: http://rubyinstaller.org/
@@ -203,44 +163,12 @@ MRI 與某些實作遵循 [RubySpec][28]，Ruby 程式語言的完整規格文�
 [21]: http://jruby.org
 [22]: http://rubini.us
 [23]: http://www.macruby.org
+[mruby]: https://github.com/mruby/mruby
 [24]: https://github.com/parrot/cardinal
 [25]: http://parrot.org
 [26]: http://www.ironruby.net
 [27]: http://ruby.gemstone.com
 [28]: http://rubyspec.org
-[31]: ftp://core.ring.gr.jp/pub/lang/ruby/
-[32]: http://www.t.ring.gr.jp/
-[33]: ftp://ftp.iij.ad.jp/pub/lang/ruby/
-[35]: ftp://ftp.ruby-lang.org/pub/ruby/
-[36]: ftp://ftp.kr.freebsd.org/pub/ruby/
-[37]: ftp://ftp.fu-berlin.de/unix/languages/ruby/
-[38]: ftp://ftp.mirrorservice.org/sites/ftp.ruby-lang.org/pub/ruby/
-[39]: ftp://ftp.easynet.be/ruby/ruby/
-[40]: ftp://ftp.chg.ru/pub/lang/ruby/
-[41]: ftp://ftp.ntua.gr/pub/lang/ruby/
-[42]: ftp://sunsite.dk/mirrors/ruby/
-[43]: ftp://www.ibiblio.org/pub/languages/ruby/
-[44]: ftp://xyz.lcs.mit.edu/pub/ruby/
-[45]: ftp://gd.tuwien.ac.at/languages/ruby/
-[46]: ftp://ruby.cdpa.nsysu.edu.tw/ruby/
-[47]: ftp://ftp.cs.pu.edu.tw/Unix/lang/Ruby/
-[48]: ftp://mirror.cs.mun.ca/pub/mirror/ruby/
-[49]: http://www.mirrorservice.org/sites/ftp.ruby-lang.org/pub/ruby/
-[50]: http://www.dnsbalance.ring.gr.jp/archives/lang/ruby/
-[51]: http://dl.ambiweb.de/mirrors/ftp.ruby-lang.org/
-[52]: http://ruby.mirror.easynet.be/
-[53]: http://mirrors.sunsite.dk/ruby/
-[54]: http://www.xs4all.nl/~hipster/lib/mirror/ruby/
-[55]: http://www.ibiblio.org/pub/languages/ruby/
-[56]: http://xyz.lcs.mit.edu/ruby/
-[57]: http://www.binarycode.org/ruby/
-[58]: http://www.online-mirror.org/ruby/
-[59]: http://ruby.trexle.com/
-[60]: http://gd.tuwien.ac.at/languages/ruby/
-[61]: http://pluto.cdpa.nsysu.edu.tw/ruby/
-[62]: http://ftp.cs.pu.edu.tw/Unix/lang/Ruby/
-[63]: https://ftp.ruby-lang.org/pub/ruby/
-[64]: http://cache.ruby-lang.org/pub/ruby/
 
 [rbenv]: https://github.com/sstephenson/rbenv
 [ruby-install]: https://github.com/postmodern/ruby-install

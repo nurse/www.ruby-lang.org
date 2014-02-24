@@ -9,6 +9,11 @@ conferences, where they get together to share reports on
 work-in-progress, discuss the future of Ruby, and welcome newcomers to
 the Ruby community.
 
+[RubyConferences.org][rc] is a simple list of Ruby-specific conferences,
+published collaboratively with the Ruby community. There you will find
+event dates, location, CFP (Call For Proposals) and Registration information.
+
+
 ### Major Ruby Conferences
 
 [RubyConf][1]
@@ -62,6 +67,11 @@ community since 2008. Visit [http://windycityrails.org][9] for details.
 and snow. Listen to engaging speakers, enjoy delicious food and enjoy the
 wonderful scenery around Bend Oregon.
 
+[Burlington Ruby Conference][18]: A summertime Ruby conference that happens
+annually in Burlington, VT. The conference is two days long and follows a
+single track. The focus of the conference is on creating an environment to
+learn, have fun and meet fellow Rubyists.
+
 ### Ruby At Other Conferences
 
 There has been a Ruby track at the [O’Reilly Open Source Conference][10]
@@ -74,12 +84,13 @@ O’Reilly), and Canada on Rails.
 
 
 
+[rc]: http://rubyconferences.org/
 [1]: http://rubyconf.org/
-[2]: http://www.rubycentral.org
+[2]: http://rubycentral.org
 [3]: http://rubykaigi.org/
 [4]: http://euruko.org
 [5]: http://www.osdc.com.au/
-[6]: http://www.rubycentral.org/rcg2006.pdf
+[6]: http://rubycentral.org/community/grant
 [7]: http://www.sdforum.org
 [8]: http://rubynation.org/
 [9]: http://windycityrails.org
@@ -91,4 +102,4 @@ O’Reilly), and Canada on Rails.
 [15]: http://madisonruby.org/
 [16]: http://steelcityruby.org/
 [17]: http://ruby.onales.com/
-
+[18]: http://burlingtonrubyconference.com

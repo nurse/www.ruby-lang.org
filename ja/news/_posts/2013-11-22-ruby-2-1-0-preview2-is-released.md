@@ -3,7 +3,7 @@ layout: news_post
 title: "Ruby 2.1.0-preview2 リリース"
 author: "nurse"
 translator: "znz"
-date: 2013-11-22 22:00:00 UTC
+date: 2013-11-22 22:00:00 +0000
 lang: ja
 ---
 
@@ -47,7 +47,7 @@ Ruby 2.1.0-preview2 をリリースしました。
 * RGenGC (ささださんの [RubyKaigi での発表](http://rubykaigi.org/2013/talk/S73) や [RubyConf 2013 での発表](http://www.atdot.net/~ko1/activities/rubyconf2013-ko1_pub.pdf) を参照してください)
 * refinements [#8481](https://bugs.ruby-lang.org/issues/8481) [#8571](https://bugs.ruby-lang.org/issues/8571)
 * 文法の変更
-  * 小数リテラルと複素数リテラル [#8430](https://bugs.ruby-lang.org/issues/8430)
+  * 有理数リテラルと複素数リテラル [#8430](https://bugs.ruby-lang.org/issues/8430)
   * def の返り値 [#3753](https://bugs.ruby-lang.org/issues/3753)
 * Bignum
   * 128ビット整数の使用 [#8509](https://bugs.ruby-lang.org/issues/8509)
@@ -56,7 +56,7 @@ Ruby 2.1.0-preview2 をリリースしました。
 * Socket.getifaddrs [#8368](https://bugs.ruby-lang.org/issues/8368)
 * RDoc 4.1.0.preview.2 と RubyGems 2.2.0.preview.2
 
-詳細な変更点は [Ruby レポジトリの NEWS (作業中)](https://github.com/ruby/ruby/blob/v2_1_0_preview2/NEWS) を参照してください。
+詳細な変更点は [Ruby リポジトリの NEWS (作業中)](https://github.com/ruby/ruby/blob/v2_1_0_preview2/NEWS) を参照してください。
 
 ささださんが toruby で Ruby 2.1 の新機能について話しました: [All about Ruby 2.1](http://www.atdot.net/~ko1/activities/toruby05-ko1.pdf)
 

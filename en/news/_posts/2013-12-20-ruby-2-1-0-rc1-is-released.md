@@ -1,9 +1,9 @@
 ---
 layout: news_post
 title: "Ruby 2.1.0-rc1 is released"
-author: "zzak"
+author: "nurse"
 translator:
-date: 2013-12-20 16:53:05 UTC
+date: 2013-12-20 16:53:05 +0000
 lang: en
 ---
 
@@ -12,7 +12,7 @@ Please test the new features in Ruby 2.1 before the final release scheduled on 2
 
 ## Notable changes since preview 2
 
-* remove curses. [#8584](http://bugs.ruby-lang.org/issues/8584)
+* remove curses [#8584](https://bugs.ruby-lang.org/issues/8584)
 
 for other changes, see [NEWS](https://github.com/ruby/ruby/blob/v2_1_0_rc1/NEWS).
 
@@ -36,33 +36,33 @@ for other changes, see [NEWS](https://github.com/ruby/ruby/blob/v2_1_0_rc1/NEWS)
 The notable changes are:
 
 * VM (method cache)
-* RGenGC(See ko1's [RubyKaigi presentation](http://rubykaigi.org/2013/talk/S73) and [RubyConf2013 presentation](http://www.atdot.net/~ko1/activities/rubyconf2013-ko1_pub.pdf))
+* RGenGC (See ko1's [RubyKaigi presentation](http://rubykaigi.org/2013/talk/S73) and [RubyConf 2013 presentation](http://www.atdot.net/~ko1/activities/rubyconf2013-ko1_pub.pdf))
 * refinements [#8481](https://bugs.ruby-lang.org/issues/8481) [#8571](https://bugs.ruby-lang.org/issues/8571)
 * syntax changes
- * Decimal/Complex Literal [#8430](https://bugs.ruby-lang.org/issues/8430)
- * def's return value [#3753](https://bugs.ruby-lang.org/issues/3753)
+  * Rational/Complex Literal [#8430](https://bugs.ruby-lang.org/issues/8430)
+  * def's return value [#3753](https://bugs.ruby-lang.org/issues/3753)
 * Bignum
- * use GMP [#8796](https://bugs.ruby-lang.org/issues/8796)
+  * use GMP [#8796](https://bugs.ruby-lang.org/issues/8796)
 * String#scrub [#8414](https://bugs.ruby-lang.org/issues/8414)
 * Socket.getifaddrs [#8368](https://bugs.ruby-lang.org/issues/8368)
 * RDoc 4.1.0 and RubyGems 2.2.0
 * "literal".freeze is now optimized [#9042](https://bugs.ruby-lang.org/issues/9042)
 * add Exception#cause [#8257](https://bugs.ruby-lang.org/issues/8257)
-* update libraries like BigDecimal, JSON, NKF, Rake, RubyGems, and RDoc.
+* update libraries like BigDecimal, JSON, NKF, Rake, RubyGems, and RDoc
+* remove curses [#8584](https://bugs.ruby-lang.org/issues/8584)
 
-
-See more details of changes: [NEWS in ruby repository(WIP)](https://github.com/ruby/ruby/blob/v2_1_0_rc1/NEWS).
+See more details of changes: [NEWS in Ruby repository (WIP)](https://github.com/ruby/ruby/blob/v2_1_0_rc1/NEWS).
 
 ko1 talked about the new features of Ruby 2.1 at toruby: [All about Ruby 2.1](http://www.atdot.net/~ko1/activities/toruby05-ko1.pdf)
 
-Konstantin Haase (@konstantinhaase) wrote good summary in his blog post: [What's new in Ruby 2.1?](http://rkh.im/ruby-2.1).
+Konstantin Haase (@konstantinhaase) wrote a good summary in his blog post: [What's new in Ruby 2.1?](http://rkh.im/ruby-2.1).
 
 ## Release Comment
 
 Known issues are:
 
-[http://bugs.ruby-lang.org/projects/ruby-trunk/issues?query_id=102](http://bugs.ruby-lang.org/projects/ruby-trunk/issues?query_id=102)
+<https://bugs.ruby-lang.org/projects/ruby-trunk/issues?query_id=102>
 
 See also the release schedule and other information:
 
-[http://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering210](http://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering210)
+<https://bugs.ruby-lang.org/projects/ruby-trunk/wiki/ReleaseEngineering210>

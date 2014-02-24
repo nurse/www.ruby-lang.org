@@ -69,12 +69,12 @@ Central et [Skills Matter][12], organisée en 2007 par Ruby Central et
 O’Reilly) et enfin *Canada on Rails*.
 
 
-[1]: http://www.rubyconf.org/
-[2]: http://www.rubycentral.org
+[1]: http://rubyconf.org/
+[2]: http://rubycentral.org
 [3]: http://rubykaigi.org/
 [4]: http://euruko.org
 [5]: http://www.osdc.com.au/
-[6]: http://www.rubycentral.org/rcg2006.pdf
+[6]: http://rubycentral.org/community/grant
 [7]: http://www.sdforum.org
 [8]: http://conferences.oreillynet.com/os2006/
 [9]: http://www.rubyonrails.org

@@ -3,7 +3,7 @@ layout: news_post
 title: "루비 2.1.0-preview2 릴리즈되었습니다"
 author: "nurse"
 translator: "SeungKyun Nam"
-date: 2013-11-22 22:00:00 UTC
+date: 2013-11-22 22:00:00 +0000
 lang: ko
 ---
 
@@ -48,7 +48,7 @@ lang: ko
 * RGenGC (ko1의 [RubyKaigi presentation](http://rubykaigi.org/2013/talk/S73)와 [RubyConf 2013 presentation](http://www.atdot.net/~ko1/activities/rubyconf2013-ko1_pub.pdf)를 참조하십시오)
 * refinements [#8481](https://bugs.ruby-lang.org/issues/8481) [#8571](https://bugs.ruby-lang.org/issues/8571)
 * 문법 변화
-  * Decimal/Complex Literal [#8430](https://bugs.ruby-lang.org/issues/8430)
+  * Rational/Complex Literal [#8430](https://bugs.ruby-lang.org/issues/8430)
   * def의 return value [#3753](https://bugs.ruby-lang.org/issues/3753)
 * Bignum
   * 128비트 정수 사용 [#8509](https://bugs.ruby-lang.org/issues/8509)

@@ -12,7 +12,7 @@ funzionale. Come mai?
 ### Gli ideali del creatore di Ruby
 
 Ruby è un linguaggio di equilibrio e armonia. Il suo creatore, [Yukihiro
-“Matz” Matsumoto][1], ha fuso insieme parti dei suoi linguaggi di
+“Matz” Matsumoto][matz], ha fuso insieme parti dei suoi linguaggi di
 programmazione preferiti (Perl, Smalltalk, Eiffel, Ada e Lisp) per
 creare un nuovo linguaggio in grado di bilanciare programmazione
 funzionale con programmazione imperativa.
@@ -41,11 +41,11 @@ Ruby-Talk, la prima [lista di discussione](/it/community/mailing-lists/)
 del linguaggio Ruby, ha raggiunto il traguardo di 200 nuovi messaggi
 al giorno.
 
-[L’indice TIOBE][6], che misura la crescita dei linguaggi di programmazione,
+[L’indice TIOBE][tiobe], che misura la crescita dei linguaggi di programmazione,
 mette Ruby al decimo posto tra tutti i linguaggi di programmazione
 esistenti al mondo. Gran parte di questa crescita è da attribuire alla
 popolarità dei programmi scritti in Ruby, in particolare il framework
-Ruby on Rails<sup>[2](#fn2)</sup>.
+[Ruby on Rails][ror].
 
 Ruby è anche un linguaggio [libero e gratuito]({{ site.license.url }}). Non
 solo non costa nulla, ma può anche essere usato, copiato, modificato e
@@ -56,7 +56,7 @@ distribuito liberamente.
 Inizialmente, Matz guardò ad altri linguaggi per trovare una sintassi
 ideale. Pensando a questa sua ricerca, ha detto lui stesso: “Volevo un
 linguaggio di scripting che fosse più potente di Perl, e allo stesso
-tempo più orientato agli oggetti di Python<sup>[3](#fn3)</sup>.”
+tempo più orientato agli oggetti di Python<sup>[2](#fn2)</sup>.”
 
 In Ruby, ogni cosa è un oggetto: ogni parte di informazione e codice ha
 delle sue proprietà e azioni. La programmazione ad oggetti chiama le
@@ -109,7 +109,7 @@ descrivendo come quel metodo dovrebbe agire. La *closure* viene chiamata
 arrivati a Ruby da altri linguaggi imperativi come PHP o Visual Basic.
 
 I blocchi sono stati ispirati dai linguaggi funzionali. Matz ha detto,
-“nelle *closures* ho voluto rispettare la cultura di Lisp<sup>[4](#fn4)</sup>.”
+“nelle *closures* ho voluto rispettare la cultura di Lisp<sup>[3](#fn3)</sup>.”
 
 {% highlight ruby %}
 motori_di_ricerca =
@@ -196,26 +196,22 @@ Ruby è in grado di offrire una marea di altre funzionalità, tra cui:
 ### Riferimenti
 
 <sup>1</sup> Matz, parlando nella lista di discussione “Ruby-Talk”, [May
-12th, 2000][2].
+12th, 2000][blade].
 {: #fn1}
 
-<sup>2</sup> Per ulteriori informazioni, visita la home page di [Ruby on
-Rails][3].
+<sup>2</sup> Matz, in [Un’intervista con il creatore di Ruby][linuxdevcenter], Nov.
+29th, 2001.
 {: #fn2}
 
-<sup>3</sup> Matz, in [Un’intervista con il creatore di Ruby][4], Nov.
-29th, 2001.
+<sup>3</sup> Matz, in [Blocchi e *closure* in Ruby][artima], December 22nd,
+2003.
 {: #fn3}
 
-<sup>4</sup> Matz, in [Blocchi e *closure* in Ruby][5], December 22nd,
-2003.
-{: #fn4}
 
 
-
-[1]: http://www.rubyist.net/~matz/
-[2]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
-[3]: http://rubyonrails.org/
-[4]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
-[5]: http://www.artima.com/intv/closures2.html
-[6]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
+[matz]: http://www.rubyist.net/~matz/
+[blade]: http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/2773
+[ror]: http://rubyonrails.org/
+[linuxdevcenter]: http://www.linuxdevcenter.com/pub/a/linux/2001/11/29/ruby.html
+[artima]: http://www.artima.com/intv/closures2.html
+[tiobe]: http://www.tiobe.com/index.php/content/paperinfo/tpci/index.html
